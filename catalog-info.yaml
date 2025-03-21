@@ -1,0 +1,24 @@
+apiVersion: backstage.io/v1alpha1
+kind: Component
+metadata:
+  name: "prueba3"
+  description: "una descripción "
+  tags:
+    - dotnet
+    - csharp
+    - webapi
+  
+  links:
+    - url: https://github.com/aremox/prueba3
+      title: Repository
+      icon: github
+
+  annotations:
+    # this could also be `url:<url>` if the documentation isn't in the same location
+    github.com/project-slug: aremox/prueba3
+    backstage.io/techdocs-ref: dir:.
+spec:
+  type: service
+  lifecycle: experimental
+  owner: "group:default/dev"
+  system: casa
